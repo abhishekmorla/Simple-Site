@@ -315,6 +315,16 @@ input[type=text], select, textarea{
 	  margin-top: 0;
 	}
   }
+
+  @media (max-width: 880px) {
+
+    .footer .footbox{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
 =======
 /*Contact*/
 .bani iframe {
