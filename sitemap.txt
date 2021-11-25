@@ -1,0 +1,9 @@
+/index.html
+/about.html
+/contacts.html
+/services.html
+/products.html
+/services1.html
+/services2.html
+services3.html
+
