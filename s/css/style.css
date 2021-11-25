@@ -1,6 +1,39 @@
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	
+}
+
+@media(max-width: 99.8rem) {
+	html{
+		font-size: 55%
+		
+	}
+}
+@media(max-width: 50.8rem) {
+	html{
+		font-size: 45%
+	}
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    .search{
+      width: 100%;
+    }
+    .menu {
+      width: 100%;
+    }
+	.contactf{
+		width: 100%;
+	}
+  }
+
 body{
 	margin: 0 auto;
-	max-width: 1000px;
+	overflow-x: hidden;
+	max-width: 100rem;
 	background-color: rgba(181, 180, 255, 0.452);
 }
 
@@ -9,36 +42,33 @@ body{
 	height: auto;
 	background-color:rgb(220, 230, 252);
 	margin: auto;
-	max-width: 1000px;
+	max-width: 100rem;
 }
 
-@media(max-width: 500px){
-	.container{
-		background-color: orangered;
-	}
-}
+
 
 
 .search{
 	float: right;
-	left: 12px;
-	padding: 20px;
+	left: 1.2rem;
+	padding: 2.0rem;
 }
 .logo{
 	float: left;
-	padding: 20px;
+	padding: 2.0rem;
 }
 .fix{
 	clear: both;
 }
 .menu{
 	background-color: rgb(66, 109, 209);
+	position: relative;
 }
 
 .menu > ul {
 	display: inline;
-	margin: 0px;
-	padding: 0px;
+	margin: 0rem;
+	padding: 0rem;
 	list-style-type: none;
 }
 
@@ -53,7 +83,7 @@ body{
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
-	padding: 15px;
+	padding: 1.5rem;
 	
 }
 .menu > ul > li > a:hover {
@@ -63,11 +93,10 @@ body{
 
 .drop{
 	position: absolute;
-	margin: 0px;
-	
+	margin: 0rem;
 	display: none;
 	list-style-type: none;
-	padding: 0px;
+	padding: 0rem;
 	z-index: 999;
 }
 .drop > li > a {
@@ -77,7 +106,7 @@ body{
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
-	padding: 15px;
+	padding: 1.5rem;
 	background-color: rgb(66, 109, 209);
 }
 
@@ -91,75 +120,60 @@ body{
 }
 
 .ban {
-	width: 1000px;
-	height: 749.8px;
+	width: 100rem;
+	height: 74.98rem;
 	overflow: hidden;
 	
 }
 .ban > img {
 	width: 100%;
 	height: auto;
-	border-radius: 90px;
-	box-shadow: 11px 13px 21px #004cff9e;
+	position: relative;
+	border-radius: 9.0rem;
+	box-shadow: 11rem 13rem 21rem #004cff9e;
 
 }
 .contenth{
-	background-color: royalblue;
-}
-.content{
 	background-color:rgb(220, 230, 252);
-	float: left;
-	padding: 25px;
-	width: 700px;
-	height: auto;
-}
-.asideb{
-	float: left;
-	padding: 25px;
-	background-color: rgb(220, 230, 252);
-	height: 320px;
-	width: 20%;
+    height: auto;
+    float: left;
+	font-size: 1.6rem;
+    padding: 2.3rem;
 	
 }
-.asideb h3{
-	font-family: sans-serif;
-	color: rgb(4, 20, 20);
+/* .content{
+	background-color:rgb(220, 230, 252);
+	float: left;
+	padding: 2.5rem;
+	width: 70.0rem;
+	height: auto;
+} */
+
+.clearfix{
+    clear: both;
 }
 
-.asideb ul{
-	display: inline;
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-}
-
-.asideb ul li a{
-	display: block;
-	margin-bottom: 15px;
-	color: rgb(10, 3, 49);
-	font-family: sans-serif;
-	font-style: italic;
-	text-decoration: none;
-}
 .footer{
 	background-color: rgb(66, 109, 209);
 	color: rgb(0, 0, 0);
 	font-weight: 1000;
-	width: 900px;
-	height: auto;
-	padding: 50px;
+	text-align: center;
+	padding: 2.0rem;
 }
 .footbox{
-	width: 300px;
+	width: 30.0rem;
 	height: auto;
 	float: left;
 	font-family: sans-serif;
 }
+.footbox h3{
+	font-size: 1.8rem;
+}
 .footbox ul{
 
 	display: inline;
-	margin: 0px;
-	padding: 0px;
+	margin: 0rem;
+	padding: 0rem;
 	list-style-type: none;
 
 }
@@ -167,7 +181,7 @@ body{
 	display: block;
 	font-size: small;
 	text-decoration: none;
-	margin-bottom: 5px;
+	margin-bottom: 0.5rem;
 	color: rgb(0, 0, 0);
 }
 .footbox address p,a{
@@ -180,11 +194,12 @@ body{
 	color: rgb(0, 0, 0);
 	font-weight: 1000;
 	text-align: center;
-	padding: 25px;
+	padding: 2.5rem;
 }
 
 .copy p{
-	margin: 0px;
+	margin: 0rem;
+	font-size: 1.5rem;
 }
 /* about */
 .content img{
@@ -192,12 +207,12 @@ body{
 }
 /*products*/
 .product1{
-	width: 200px;
+	width: 20.0rem;
 	height: auto;
 	float: left;
-	margin: 5px;
-	border: 1px solid orange; 
-	padding: 5px;
+	margin: 4.5rem;	
+	border: 0.1rem solid orange; 
+	padding: 0.5rem;
 
 }
 
@@ -220,16 +235,82 @@ body{
 	text-decoration: none;
 	font-family: sans-serif;
 	color: thistle;
-	padding: 8px;
+	padding: 0.8rem;
 	
 }
 .pcaption a:hover{
 	background-color: tomato;
 	color: whitesmoke;
 }
-/*Contact*/
-.bani iframe {
-    width: 1000px;
-    height: 410.8px;
-    overflow: hidden;
+.contactf{
+	max-width: 100%;
+	margin: 8rem;
+	font-size: 1.7rem;
 }
+
+.contactf td{
+	max-width: 100%;
+	padding: 0.6rem;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+  /* Style the container */
+  .container {
+	border-radius: 5px;
+	background-color: rgb(220, 230, 252);
+	padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
